@@ -20,14 +20,14 @@ class TreeMap
 {
 private:
 public:
-	inline size_t Count() { return 0 }
+	inline size_t Count() { return 0; }
 
 	V& operator[](const K& key);
 
 	bool Place(const K& key, const V& value);
 	bool Remove(const K& key);
 
-	bool ContainsKey(const V& value);
+	bool ContainsKey(const K& key);
 
 	void Clear();
 
